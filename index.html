@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Батырхан | Frontend Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Dev<span>Genius</span></div>
+            <nav class="nav-links">
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about container">
+        <div class="glass-card about-content">
+            <h3>Обо мне</h3>
+            <p>Я начинающий frontend-разработчик из Казахстана. За последние месяцы я реализовал 5 ключевых проектов: от кибер-магазинов до платформ для аналитики. Мой основной стек: <strong>HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+)</strong>. Совмещаю дисциплину из дзюдо с точностью в коде.</p>
+        </div>
+    </section>
+
+    <section class="hero container">
+        <div class="hero-text">
+            <p class="badge">Доступен для заказов в Тенге</p>
+            <h1>Привет, я <span>Батырхан</span></h1>
+            <h2>Frontend Developer</h2>
+            <p class="hero-desc">Создаю адаптивные и интерактивные сайты. Моя цель — делать интернет красивее и функциональнее для вашего бизнеса.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Мои работы</a>
+                <button onclick="openModal()" class="btn btn-outline">Связаться</button>
+            </div>
+        </div>
+        <div class="hero-img-container">
+            <div class="blob"></div>
+            <img src="images/avatar.jpg" alt="Батырхан Frontend" class="hero-avatar">
+        </div>
+    </section>
+
+    <section id="projects" class="projects container">
+        <h2 class="section-title">Мои <span>Проекты</span></h2>
+        <div class="projects-grid">
+            
+            <div class="project-card glass-card">
+                <div class="project-img-wrapper"><img src="images/project1.png" alt="NeonCyberStore"></div>
+                <div class="project-info">
+                    <h4>Neon Cyber Store</h4>
+                    <p>Футуристичный магазин с корзиной и динамическим интерфейсом.</p>
+                    <div class="project-tags"><span>JS</span> <span>Cyber Design</span></div>
+                    <div class="project-links">
+                        <a href="https://neoncyberstore.netlify.app/" target="_blank" class="link-btn"><i data-lucide="external-link"></i> Live</a>
+                        <a href="https://github.com/batyrhangalymzhan-samurai?tab=repositories" target="_blank" class="link-btn"><i data-lucide="github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-img-wrapper"><img src="images/project2.png" alt="IpponTube"></div>
+                <div class="project-info">
+                    <h4>IpponTube</h4>
+                    <p>Видео-платформа с удобной навигацией и поиском контента.</p>
+                    <div class="project-tags"><span>UI/UX</span> <span>Video Logic</span></div>
+                    <div class="project-links">
+                        <a href="https://ippontube.netlify.app/" target="_blank" class="link-btn"><i data-lucide="external-link"></i> Live</a>
+                        <a href="https://github.com/batyrhangalymzhan-samurai?tab=repositories" target="_blank" class="link-btn"><i data-lucide="github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-img-wrapper"><img src="images/project3.png" alt="IpponBlog"></div>
+                <div class="project-info">
+                    <h4>IpponBlog</h4>
+                    <p>Интерактивный блог с системой фильтрации постов.</p>
+                    <div class="project-tags"><span>Arrays</span> <span>DOM</span></div>
+                    <div class="project-links">
+                        <a href="https://ipponblog.netlify.app/" target="_blank" class="link-btn"><i data-lucide="external-link"></i> Live</a>
+                        <a href="https://github.com/batyrhangalymzhan-samurai?tab=repositories" target="_blank" class="link-btn"><i data-lucide="github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-img-wrapper"><img src="images/project4.png" alt="WealthDash"></div>
+                <div class="project-info">
+                    <h4>WealthDash</h4>
+                    <p>Панель управления финансами и аналитикой данных.</p>
+                    <div class="project-tags"><span>Dashboard</span> <span>Charts</span></div>
+                    <div class="project-links">
+                        <a href="https://wealthdashbatyr.netlify.app/" target="_blank" class="link-btn"><i data-lucide="external-link"></i> Live</a>
+                        <a href="https://github.com/batyrhangalymzhan-samurai?tab=repositories" target="_blank" class="link-btn"><i data-lucide="github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-img-wrapper"><img src="images/project5.png" alt="Dina UM Media"></div>
+                <div class="project-info">
+                    <h4>Dina UM Media</h4>
+                    <p>Медиа-лендинг с современным дизайном и анимациями.</p>
+                    <div class="project-tags"><span>Responsive</span> <span>Media</span></div>
+                    <div class="project-links">
+                        <a href="https://dina-um-media.netlify.app/" target="_blank" class="link-btn"><i data-lucide="external-link"></i> Live</a>
+                        <a href="https://github.com/batyrhangalymzhan-samurai?tab=repositories" target="_blank" class="link-btn"><i data-lucide="github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts container">
+        <div class="glass-card contact-box">
+            <h2>Напишите мне</h2>
+            <p>Давайте обсудим ваш проект. Отвечаю быстро!</p>
+            <div class="contact-links">
+                <a href="https://wa.me/77055755098" target="_blank" class="contact-link">
+                    <i data-lucide="message-circle" style="color:#25d366"></i> WhatsApp
+                </a>
+                <a href="https://github.com/batyrhangalymzhan-samurai" target="_blank" class="contact-link">
+                    <i data-lucide="github"></i> Мой GitHub
+                </a>
+            </div>
+            <button class="btn btn-primary" onclick="openModal()">Заказать проект</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Батырхан. Все права защищены.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Новый проект</h3>
+            <form id="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea placeholder="Что нужно сделать?" rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary">Отправить в WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scrollTop" class="btn-top">↑</button>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
